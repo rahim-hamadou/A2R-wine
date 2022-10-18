@@ -27,7 +27,9 @@
 }
 
 .nav span {
-	font-size: 30px;
+	font-size: clamp(0.8rem, 1.7vw, 2.2rem);
+	font-weight: 700;
+	/* font-size: clamp(10px, 2em, 18px); */
 }
 
 .btn {
@@ -35,7 +37,7 @@
 	font-weight: 900;
 }
 .btn span {
-	font-size: 30px;
+	font-size: clamp(1rem, 2.5vw, 2rem);
 	cursor: pointer;
 }
 .buy a:link,
@@ -58,7 +60,7 @@
 .titleName p {
 	padding: 3px;
 	cursor: pointer;
-	font-size: 35px;
+	font-size: clamp(1rem, 2.5vw, 2rem);
 	margin: 0;
 	color: black;
 	font-weight: 900;
@@ -104,12 +106,12 @@
 }
 
 .focus span:nth-child(1) {
-	font-size: 20px;
+	font-size: clamp(1rem, 2.2vw, 2rem);
 	font-weight: 600;
 }
 
 .focus span:nth-child(2) {
-	font-size: 36px;
+	font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 	font-weight: 700;
 }
 .btnChoice {
@@ -144,7 +146,6 @@
 /* MAIN-TOP */
 .mainTop {
 	margin: 30px;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -172,11 +173,11 @@
 
 .mainTopTitle .titleOne {
 	padding: 10px;
-	font-size: 18px;
+	font-size: clamp(1rem, 2.5vw, 2rem);
 	font-weight: 400;
 }
 .mainTopTitle .titleTwo {
-	font-size: 24px;
+	font-size: clamp(1rem, 2.5vw, 2rem);
 	font-weight: 700;
 }
 
@@ -252,8 +253,15 @@
 
 .linkFooter {
 	font-weight: 700;
-	font-size: 12px;
+	font-size: clamp(0.3rem, 1vw, 1.5rem);
 	cursor: pointer;
+	color: white;
+}
+
+.linkFooter a:visited,
+.linkFooter a:link,
+.linkFooter a:active {
+	text-decoration: none;
 	color: white;
 }
 
@@ -273,13 +281,17 @@
 	width: 100%;
 }
 
+.textContainer h2 {
+	color: black;
+}
+
 .textInfoAdmin {
 	color: white;
-	font-size: 22px;
+	font-size: clamp(1rem, 2.5vw, 2rem);
 	transition: 0.5s;
 	cursor: default;
 }
-.textInfoAdmin :hover {
+.textInfoAdmin span:hover {
 	color: purple;
 }
 
@@ -290,9 +302,17 @@
 	width: 100%;
 }
 .placecard {
-	width: 45%;
-	height: 300px;
-	border: 1px solid red;
+	background: wheat;
+	border-radius: 20px;
+	padding: 30px;
+	width: 33%;
+	height: auto;
+	/* border: 1px solid red; */
+}
+
+.placecard h3 {
+	font-size: clamp(0.5rem, 1.3vw, 1.5rem);
+	color: black;
 }
 
 @media screen and (max-width: 700px) {
@@ -302,6 +322,9 @@
 		flex-direction: column;
 	}
 
+	.btnChoice {
+		flex-direction: column;
+	}
 	.textInfoAdmin {
 		display: flex;
 		flex-direction: column;

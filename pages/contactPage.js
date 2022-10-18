@@ -14,8 +14,8 @@ function ContactPage() {
 						<div>
 							<Link href="/">
 								<span>
-									<FaHome />
-									Acceuil
+									{/* <FaHome /> */}
+									Accueil
 								</span>
 							</Link>
 						</div>
@@ -27,8 +27,8 @@ function ContactPage() {
 						<div>
 							<Link href="/contactPage">
 								<span>
-									<FaInfoCircle />
-									<span>Information</span>
+									{/* <FaInfoCircle /> */}
+									<span>Informations</span>
 								</span>
 							</Link>
 						</div>

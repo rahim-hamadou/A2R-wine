@@ -10,6 +10,7 @@
 	flex-direction: row;
 	align-items: flex-end;
 	transition: 0.4s;
+	/* border: 3px solid green; */
 }
 .cardType:hover {
 	transform: scale(1.03);
@@ -18,7 +19,7 @@
 }
 
 .cardType {
-	background: purple;
+	background: #096a09;
 	/* background: url("../public/src/bar.jpg"); */
 	background-size: cover;
 	background-position: center;
@@ -26,40 +27,55 @@
 	/* border-radius: 10% 10% 45% 47% / 0% 0% 92% 100%  */
 }
 /* .cardType:nth-child(1) {
-	background: url("../public/pizza.jpeg");
-	background-size: cover;
-	background-position: center;
-}
-.cardType:nth-child(2) {
-	background: url("../public/burger.jpeg");
-	background-size: cover;
-	background-position: center;
-}
-.cardType:nth-child(3) {
-	background: url("../public/wok.jpeg");
-	background-size: cover;
-	background-position: center;
-}
-.cardType:nth-child(4) {
-	background: url("../public/salade.jpeg");
-	background-size: cover;
+	background: purple;
+	background-size: contain;
 	background-position: center;
 } */
-/* .cardType:nth-child(5) {
-	background: url("../public/phantom4.png");
-	background-size: cover;
-	background-position: center;
-}
-.cardType:nth-child(6) {
-	background: url("../public/phantom4.png");
-	background-size: cover;
+/* .cardType:nth-child(1) {
+	background: url("../public/src/\ grand-gesta-rosé.jpeg") no-repeat;
+	background-size: contain;
 	background-position: center;
 } */
 
+/* .cardType:nth-child(2) {
+	background: purple;
+	background-size: contain;
+	background-position: center;
+} */
+/* .cardType:nth-child(3) {
+	background: rgb(208, 195, 153);
+	background-size: contain;
+	background-position: center;
+} */
+/* .cardType:nth-child(4) {
+	background: url("../public/src/casteler-merlot-rouge.jpeg");
+	background-size: contain;
+	background-position: center;
+} */
+/* .cardType:nth-child(5) {
+	background: url("../public/src/casteler-merlot-rouge.jpeg");
+	background-size: contain;
+	background-position: center;
+} */
+/* .cardType:nth-child(6) {
+	background: url("../public/src/cava-demi\ sec.jpeg");
+	background-size: contain;
+	background-position: center;
+} */
+/* .cardType:nth-child(7) {
+	background: url("../public/src/\ grand-gesta-rosé.JPG");
+	background-size: contain;
+	background-position: center;
+} */
+/* .cardType:nth-child(8) {
+	background: url("../public/src/cabernet\ sauvignon.jpeg");
+	background-size: contain;
+	background-position: center;
+} */
 .cardText {
 	/* background: red; */
 	width: 100%;
-	margin: 20px;
+	margin: 18px;
 	height: 70%;
 	display: flex;
 	flex-direction: column;
@@ -80,28 +96,32 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: #000;
+	color: white;
 }
 .textInfo .title {
 	text-align: center;
-	font-size: 30px;
+	font-size: clamp(1rem, 1.2vw, 1.4rem);
 	font-weight: 600;
 }
 .textInfo .info {
 	text-align: center;
-	font-size: 22px;
+	font-size: clamp(0.7rem, 0.8vw, 1rem);
 	font-weight: 700;
 	width: 50%;
 }
 
 .cardText button {
-	width: 150px;
-	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	padding: 10px;
 	border-radius: 5px;
 	border: none;
-	background: #000;
+	background: black;
 	color: #fff;
 	font-weight: 600;
+	font-size: clamp(0.7rem, 1vw, 1.2rem);
 	transition-duration: 0.7s;
 }
 

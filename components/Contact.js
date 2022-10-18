@@ -33,7 +33,22 @@ function Contact(props) {
 			<div className={styles.textInfoAdmin}>
 				<div className={styles.textContainer}>
 					<h2>Points de vente & Contacts</h2>
-					<div className={styles.placecontainer}>{placeVente}</div>
+					<div className={styles.placecontainer}>
+						<div className={styles.placecard}>
+							<h3>
+								Nom: <span>Super Marché</span>
+							</h3>
+							<h3>
+								Adresse: <span>Douala</span>
+							</h3>
+							<h3>
+								Numero: <span>+237</span>
+							</h3>
+							<h3>
+								Livraison: <span>Possible</span>
+							</h3>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

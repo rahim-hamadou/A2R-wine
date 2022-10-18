@@ -14,7 +14,7 @@ function Card(props) {
 				</div>
 				<button>
 					<Link href="/contactPage">
-						<span>Contactez nous</span>
+						<span>Commande</span>
 					</Link>
 				</button>
 			</div>

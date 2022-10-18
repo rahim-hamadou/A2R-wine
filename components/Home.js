@@ -1,5 +1,8 @@
 import styles from "../styles/Home.module.css";
 import { FaShoppingBag, FaBars, FaUserAlt, FaMapMarker, FaHome, FaInfoCircle } from "react-icons/fa";
+import VideoPlayer from "./VideoPlayer";
+import Head from "next/head";
+
 import { FaKickstarterK } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -37,13 +40,17 @@ function Home() {
 
 	return (
 		<div>
+			<Head>
+				<title>Next App</title>
+				<link rel="icon" href="/frontend/public/favicon_io/android-chrome-192x192.png" />
+			</Head>
 			<div className={styles.homeTop}>
 				<header className={styles.nav}>
 					<div className={styles.iconPlus}>
 						<div>
 							<Link href="/">
 								<span>
-									<FaHome />
+									{/* <FaHome /> */}
 									Accueil
 								</span>
 							</Link>
@@ -56,8 +63,8 @@ function Home() {
 						<div>
 							<Link href="/contactPage">
 								<span>
-									<FaInfoCircle />
-									Information
+									{/* <FaInfoCircle /> */}
+									Informations
 								</span>
 							</Link>
 						</div>
@@ -89,6 +96,7 @@ function Home() {
 						{" "}
 						<img src="/src/raisin.jpeg" alt="" />
 					</div>
+					<VideoPlayer />
 					<div className={styles.mainTopLink}>
 						<h2>A2R connect</h2>
 
@@ -98,8 +106,8 @@ function Home() {
 						</div>
 
 						<div className={styles.contact}>
-							<span>Contact: +237 </span>
-							<span>Mail:a2r-connect@gmail.com</span>
+							{/* <span>Contact: +237 </span> */}
+							{/* <span>Mail:a2r-connect@gmail.com</span> */}
 						</div>
 					</div>
 				</div>
@@ -109,9 +117,13 @@ function Home() {
 			</main>
 			<footer>
 				<div className={styles.footer}>
-					<span className={styles.linkFooter}>CONTACT</span>
-					<span className={styles.linkFooter}>SUPPORT</span>
-					<span className={styles.linkFooter}>ABOUT</span>
+					<span className={styles.linkFooter}>
+						<Link href="/contactPage">CONTACT</Link>
+					</span>
+
+					<span className={styles.linkFooter}>
+						<Link href="https://rahim-hamadou.netlify.app/">SUPPORT</Link>
+					</span>
 				</div>
 			</footer>
 		</div>
