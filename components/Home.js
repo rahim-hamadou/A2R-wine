@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.css";
 import { FaShoppingBag, FaBars, FaUserAlt, FaMapMarker, FaHome, FaInfoCircle } from "react-icons/fa";
 import VideoPlayer from "./VideoPlayer";
 import Head from "next/head";
+import Image from "next/image";
 
 import { FaKickstarterK } from "react-icons/fa";
 import { useState, useEffect } from "react";
@@ -93,8 +94,7 @@ function Home() {
 						{/* <span className={styles.titleTwo}>ON SORT LES COUVERTS</span> */}
 					</div>
 					<div className={styles.mainTopImg}>
-						{" "}
-						<img src="/src/raisin.jpeg" alt="" />
+						<Image src={"/src/raisin 2.jpeg"} alt="raisin" width={600} height={300} />
 					</div>
 					<VideoPlayer />
 					<div className={styles.mainTopLink}>
