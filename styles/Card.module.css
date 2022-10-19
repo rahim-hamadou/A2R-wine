@@ -102,6 +102,7 @@
 	text-align: center;
 	font-size: clamp(1rem, 1.2vw, 1.4rem);
 	font-weight: 600;
+	text-transform: capitalize;
 }
 .textInfo .info {
 	text-align: center;

@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 function VideoPlayer() {
 	return (
 		<div className={styles.playerContain}>
-			<h2 className={styles.playerTitle}>Degustation organisée par a2r-connect</h2>
+			<h2 className={styles.playerTitle}>Degustation organisée par A2R Connect Plus</h2>
 			<iframe
 				className={styles.player}
 				width="85%"

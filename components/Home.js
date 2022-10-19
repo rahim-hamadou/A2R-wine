@@ -58,7 +58,7 @@ function Home() {
 						</div>
 					</div>
 					<div className={styles.titleName}>
-						<p>COVIDES & A2R</p>
+						<p>COVIDES & A2RCP</p>
 					</div>
 					<div className={styles.iconPlus}>
 						<div>
@@ -74,7 +74,7 @@ function Home() {
 				<div className={styles.discover}>
 					<div className={styles.focus}>
 						<span>DECOUVRIR</span>
-						<span>LE VRAI GOUT DU VINS</span>
+						<span>le vrai goût du vin</span>
 					</div>
 					<div className={styles.btnChoice}>
 						<button className={styles.buy}>
@@ -98,7 +98,7 @@ function Home() {
 					</div>
 					<VideoPlayer />
 					<div className={styles.mainTopLink}>
-						<h2>A2R connect</h2>
+						<h2>A2R Connect Plus</h2>
 
 						<div className={styles.descriptionTest}>
 							<p>Fondée il y a plusieurs années...</p>
