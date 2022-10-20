@@ -25,7 +25,7 @@ function Home() {
 				setWines(data.allWines);
 			});
 	}, []);
-	console.log(wines);
+	// console.log(wines);
 
 	// places
 	useEffect(() => {
@@ -35,7 +35,7 @@ function Home() {
 				setPlaces(data.allPlaces);
 			});
 	}, []);
-	console.log(places);
+	// console.log(places);
 
 	// allwine
 	useEffect(() => {
@@ -45,7 +45,7 @@ function Home() {
 				setAllWines(data.allWines);
 			});
 	}, []);
-	console.log(allwines);
+	// console.log(allwines);
 
 	// casteller
 	useEffect(() => {
@@ -55,7 +55,7 @@ function Home() {
 				setCastellers(data.CastellerWine);
 			});
 	}, []);
-	console.log(castellers);
+	// console.log(castellers);
 
 	const wineInfo = wines.map((data) => {
 		return <Card {...data} />;
