@@ -14,6 +14,8 @@ function Home() {
 	// ETATS
 	const [wines, setWines] = useState([]);
 	const [places, setPlaces] = useState([]);
+	const [allwines, setAllWines] = useState([]);
+	const [castellers, setCastellers] = useState([]);
 
 	// wines
 	useEffect(() => {
@@ -34,6 +36,26 @@ function Home() {
 			});
 	}, []);
 	console.log(places);
+
+	// allwine
+	useEffect(() => {
+		fetch("https://backend-a2r.vercel.app/allwines")
+			.then((response) => response.json())
+			.then((data) => {
+				setAllWines(data.allWines);
+			});
+	}, []);
+	console.log(allwines);
+
+	// casteller
+	useEffect(() => {
+		fetch("https://backend-a2r.vercel.app/casteller")
+			.then((response) => response.json())
+			.then((data) => {
+				setCastellers(data.CastellerWine);
+			});
+	}, []);
+	console.log(castellers);
 
 	const wineInfo = wines.map((data) => {
 		return <Card {...data} />;
